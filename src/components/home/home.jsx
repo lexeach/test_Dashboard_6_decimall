@@ -193,7 +193,7 @@ const Dashboard = () => {
 
       const token_rewared_convert = web3.utils.fromWei(token_rewared, "ether");
       setTokenRewarded(roundToFour(token_rewared_convert));
-      setPayAutoPool(roundToFour(convert_pay_auto_pool));
+      setPayAutoPool(roundToFour(convert_pay_auto_pool * (10 ** 12)));
 
       const convert_levelincome = web3.utils.fromWei(level_income, "ether");
       setLevelPrice(roundToFour(convert_levelincome));
