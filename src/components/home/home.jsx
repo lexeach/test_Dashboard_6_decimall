@@ -208,7 +208,7 @@ const Dashboard = () => {
       const tokenPriceIs_convert = web3.utils.fromWei(tokenPriceIs, "ether");
       const getNextReward_convert = web3.utils.fromWei(getNextReward, "ether");
 
-      setTokenPrice(tokenPriceIs_convert);
+      setTokenPrice(tokenPriceIs_convert * (10 ** 12));
       setNetxtReward(roundToFour(getNextReward_convert));
     }
 
