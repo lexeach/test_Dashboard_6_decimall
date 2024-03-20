@@ -196,7 +196,7 @@ const Dashboard = () => {
       setPayAutoPool(roundToFour(convert_pay_auto_pool * (10 ** 12)));
 
       const convert_levelincome = web3.utils.fromWei(level_income, "ether");
-      setLevelPrice(roundToFour(convert_levelincome));
+      setLevelPrice(roundToFour(convert_levelincome * (10 ** 12)));
 
       // token balance
       let token_balance = await BEP20_.methods.balanceOf(accounts[0]).call();
