@@ -139,7 +139,7 @@ const Dashboard = () => {
       const networkId = await web3.eth.net.getId();
       let Usdt = new web3.eth.Contract(USDT.ABI,USDT.address);
       const bal = await Usdt.methods.balanceOf(accounts[0]).call()
-      const usdtbal = bal/10**18
+      const usdtbal = bal/10**6
       if (195 <= usdtbal) {
        // alert("condition is ok")
        setbalanceStatus(true);
