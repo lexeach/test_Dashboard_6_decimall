@@ -353,7 +353,7 @@ const Dashboard = () => {
     // console.log("the approve REGESTRATION_FESS", REGESTRATION_FESS);
     // the approve REGESTRATION_FESS ERC20-Token-Accepting
 
-    if (REGESTRATION_FESS === "150000000000000000000") {
+    if (REGESTRATION_FESS === "150000000") {
       let USDT_ = new web3.eth.Contract(USDT.ABI, USDT.address);
       let isAllowance = await USDT_.methods
         .allowance(account, ICU.address)
