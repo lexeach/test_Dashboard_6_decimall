@@ -189,7 +189,7 @@ const Dashboard = () => {
       setTaxRate(TaxRate);
 
       setCurrentId(currentId);
-      setREGESTRATION_FESS(REGESTRATION_FESS);
+      setREGESTRATION_FESS(REGESTRATION_FESS * (10 ** 12));
 
       const token_rewared_convert = web3.utils.fromWei(token_rewared, "ether");
       setTokenRewarded(roundToFour(token_rewared_convert));
